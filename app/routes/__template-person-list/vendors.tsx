@@ -1,11 +1,11 @@
 import { Link } from "remix";
 
 export const handle = {
-  breadcrumb: () => <Link to="/">Home</Link>
+  breadcrumb: () => <Link to="/vendors">Vendors</Link>
 };
-const filePath = "./routes/index.tsx";
+const filePath = "./routes/__template-person-list/vendors.tsx";
 
-export default function Home() {
+export default function Vendors() {
   return (
     <div className="component">
       <div className="component-path">{filePath}</div>

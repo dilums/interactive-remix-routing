@@ -1,0 +1,9 @@
+.list-items{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.list-items > div > div{
+    width: 60px;
+}
