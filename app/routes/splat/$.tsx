@@ -4,7 +4,7 @@ export const handle = {
   breadcrumb: (match:{params:{['*']:string}}) => <Link to="/splat/match1">{match.params['*']}</Link>
 };
 
-const filePath = "./routes/splat/match1.tsx";
+const filePath = "./routes/splat/$.tsx";
 
 export default function SplatDefault() {
   return (

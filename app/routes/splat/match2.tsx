@@ -4,7 +4,7 @@ export const handle = {
   breadcrumb: () => <Link to="/splat/match2">match2</Link>
 };
 
-const filePath = "./routes/splat/match1.tsx";
+const filePath = "./routes/splat/match2.tsx";
 
 export default function MatchB() {
   return (
