@@ -66,7 +66,7 @@ export default function Structure() {
                   <span className="file layout-route">L</span>$invoiceId.tsx
                 </li>
                 <li>
-                  <NavLink to="/invoices"  end >
+                  <NavLink to="/invoices" end>
                     <span className="file route">R</span>index.tsx
                   </NavLink>
                 </li>

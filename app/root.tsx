@@ -26,9 +26,9 @@ export let links: LinksFunction = () => {
 // https://remix.run/api/conventions#route-filenames
 export default function App() {
   const matches = useMatches();
-  
+
   const lastMatch = matches.slice(-1)[0];
-  const ViewIcon = lastMatch && lastMatch.handle && lastMatch.handle.viewIcon 
+  const ViewIcon = lastMatch && lastMatch.handle && lastMatch.handle.viewIcon
 
   return (
     <Document>
@@ -48,18 +48,18 @@ export default function App() {
                   {match.handle.breadcrumb(match)}
                 </span>
               ))}
-             
 
-              
+
+
         </div>
         {
                 ViewIcon && <ViewIcon/>
               }
         </div>
-      
+
         <div className="outlet-wrapper">
         <Outlet />
-        
+
         </div>
       </Layout>
     </Document>
@@ -150,9 +150,11 @@ function Document({
 
 function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="root" >
-        <div className="sidebar" >
-            <div className="" ><Structure/></div>
+    <div className="root">
+        <div className="sidebar">
+            <div>
+              <Structure/>
+            </div>
         </div>
         <div className="content">{children}</div>
     </div>

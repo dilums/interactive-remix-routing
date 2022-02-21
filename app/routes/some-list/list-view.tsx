@@ -14,12 +14,12 @@ export default function ListView() {
     <div className="component">
       <div className="component-path">{filePath}</div>
       <div className="component-description">
-      <div className="">
-      In Remix, you can do much more with leaf routes than just rendering a component. In this example, I'm adding stylesheet to head when grid-view.tsx is rendered. Which changes styles of an element in the parent.
-      </div>
-      <div className="">
-      You can also use 'useMatches'  hook and 'handles' to pass data around your app. In here root.tsx uses a component that is passed by grid-view.tsx or  list-view.tsx to display to Icon on the right side of the breadcrumbs.
-      </div>
+        <p>
+        In Remix, you can do much more with leaf routes than just rendering a component. In this example, I'm adding stylesheet to head when grid-view.tsx is rendered. Which changes styles of an element in the parent.
+        </p>
+        <p>
+        You can also use 'useMatches'  hook and 'handles' to pass data around your app. In here root.tsx uses a component that is passed by grid-view.tsx or  list-view.tsx to display to Icon on the right side of the breadcrumbs.
+        </p>
       </div>
     </div>
   );
