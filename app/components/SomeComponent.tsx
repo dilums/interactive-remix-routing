@@ -1,7 +1,7 @@
 export default function SomeComponent({ label }: { label: string }) {
   return (
-    <div className="">
-      <div>{label} </div>
+    <div>
+      <div>{label}</div>
       <div className="grid">
         <div className="grid-item" id="grid-item-1">
           1

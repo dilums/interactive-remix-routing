@@ -16,7 +16,7 @@ export default function Activity() {
     <div className="component">
       <div className="component-path">{filePath}</div>
       <div className="component-description">
-      
+
       All these routes will be matched to the same hierarchy that ends with $activity.tsx
       <ul>
         <li><Link to="/invoices/1234/activity/5678">/invoices/1234/activity/5678</Link></li>
@@ -33,16 +33,16 @@ export default function Activity() {
       </ul>
 
       You can access router parameters using "useParams". So in this page:
-      <div className="">
+      <p>
       invoiceId is <span className="val-param">{params.invoiceId}</span>
-      </div>
-      <div className="">
+      </p>
+      <p>
       activityId is <span className="val-param">{params.activityId}</span>
-      </div>
+      </p>
 
       {
         query.length ? <div>You can use 'useSearchParams' to access the  query parameters.In this page parameter 'q' has following value(s)
-          <div className="">
+          <div>
           <span className="val-param">{JSON.stringify(query)}</span>
           </div>
         </div>:null

@@ -1,7 +1,7 @@
 import { Outlet} from "remix";
 
 export const handle = {
-  breadcrumb: () => <span >Some List</span>
+  breadcrumb: () => <span>Some List</span>
 };
 
 const filePath = "./routes/some-list.tsx";

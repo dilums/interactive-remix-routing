@@ -45,7 +45,7 @@ export default function Structure() {
                       </ul>
                     </li>
 
-                    
+
                     <li>
                       <span className="file layout-route">L</span>activity.tsx
                     </li>
@@ -66,7 +66,7 @@ export default function Structure() {
                   <span className="file layout-route">L</span>$invoiceId.tsx
                 </li>
                 <li>
-                  <NavLink to="/invoices"  end >
+                  <NavLink to="/invoices" end>
                     <span className="file route">R</span>index.tsx
                   </NavLink>
                 </li>
@@ -212,7 +212,7 @@ export default function Structure() {
             </li>
 
             <li>
-              <span className="file layout-route">L</span>erros.tsx
+              <span className="file layout-route">L</span>errors.tsx
             </li>
           </ul>
         </li>
