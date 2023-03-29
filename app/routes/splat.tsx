@@ -1,7 +1,7 @@
-import { Outlet} from "remix";
+import { Outlet } from "@remix-run/react";
 
 export const handle = {
-  breadcrumb: () => <span>Splat</span>
+  breadcrumb: () => <span>Splat</span>,
 };
 
 const filePath = "./routes/splat.tsx";

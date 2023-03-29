@@ -1,7 +1,11 @@
-import { Outlet,  Link} from "remix";
+import { Outlet, Link } from "@remix-run/react";
 
 export const handle = {
-  breadcrumb: (match) => <Link to={`/invoices/${match.params.invoiceId}`}>{match.params.invoiceId}</Link>
+  breadcrumb: (match: any) => (
+    <Link to={`/invoices/${match.params.invoiceId}`}>
+      {match.params.invoiceId}
+    </Link>
+  ),
 };
 
 const filePath = "./routes/invoices/$invoiceId.tsx";

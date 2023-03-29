@@ -1,4 +1,4 @@
-import { Outlet} from "remix";
+import { Outlet } from "@remix-run/react";
 
 const filePath = "./routes/__template-person-list.tsx";
 

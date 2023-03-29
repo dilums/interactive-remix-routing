@@ -1,7 +1,7 @@
-import { Link } from "remix";
+import { Link } from "@remix-run/react";
 
 export const handle = {
-  breadcrumb: () => <Link to="/and/this/works/too">This Works Too</Link>
+  breadcrumb: () => <Link to="/and/this/works/too">This Works Too</Link>,
 };
 const filePath = "./routes/and.this.works/too.tsx";
 

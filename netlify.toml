@@ -1,10 +1,9 @@
 [build]
-  functions = "netlify/functions"
+  command = "remix build"
   publish = "public"
 
 [dev]
-  functions = "netlify/functions"
-  publish = "public"
+  command = "remix watch"
   port = 3000
 
 [[redirects]]
