@@ -1,4 +1,4 @@
-import { NavLink } from "remix";
+import { NavLink } from "@remix-run/react";
 
 export default function Structure() {
   return (
@@ -44,7 +44,6 @@ export default function Structure() {
                         </li>
                       </ul>
                     </li>
-
 
                     <li>
                       <span className="file layout-route">L</span>activity.tsx

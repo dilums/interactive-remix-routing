@@ -6,20 +6,17 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
-  useCatch
-} from "remix";
-import type { LinksFunction } from "remix";
+  useCatch,
+} from "@remix-run/react";
+import type { LinksFunction } from "@remix-run/node";
 
 import globalStylesUrl from "~/styles/global.css";
 
 import Structure from "./components/structure";
 
-
 // https://remix.run/api/app#links
 export let links: LinksFunction = () => {
-  return [
-    { rel: "stylesheet", href: globalStylesUrl },
-  ];
+  return [{ rel: "stylesheet", href: globalStylesUrl }];
 };
 
 // https://remix.run/api/conventions#default-export
@@ -28,38 +25,29 @@ export default function App() {
   const matches = useMatches();
 
   const lastMatch = matches.slice(-1)[0];
-  const ViewIcon = lastMatch && lastMatch.handle && lastMatch.handle.viewIcon
+  const ViewIcon = lastMatch && lastMatch.handle && lastMatch.handle.viewIcon;
 
   return (
     <Document>
       <Layout>
         <div className="toolbar">
-        <div className="breadcrumb">
-        {matches
+          <div className="breadcrumb">
+            {matches
               // skip routes that don't have a breadcrumb
-              .filter(
-                match =>
-                  match.handle && match.handle.breadcrumb
-              )
+              .filter((match) => match.handle && match.handle.breadcrumb)
               // render breadcrumbs!
               .map((match, index) => (
                 <span key={index}>
-                  {index ? <span> ❱ </span> :null}
-                  {match.handle.breadcrumb(match)}
+                  {index ? <span> ❱ </span> : null}
+                  {match?.handle?.breadcrumb(match)}
                 </span>
               ))}
-
-
-
-        </div>
-        {
-                ViewIcon && <ViewIcon/>
-              }
+          </div>
+          {ViewIcon && <ViewIcon />}
         </div>
 
         <div className="outlet-wrapper">
-        <Outlet />
-
+          <Outlet />
         </div>
       </Layout>
     </Document>
@@ -124,7 +112,7 @@ export function CatchBoundary() {
 
 function Document({
   children,
-  title
+  title,
 }: {
   children: React.ReactNode;
   title?: string;
@@ -151,13 +139,12 @@ function Document({
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="root">
-        <div className="sidebar">
-            <div>
-              <Structure/>
-            </div>
+      <div className="sidebar">
+        <div>
+          <Structure />
         </div>
-        <div className="content">{children}</div>
+      </div>
+      <div className="content">{children}</div>
     </div>
   );
 }
-

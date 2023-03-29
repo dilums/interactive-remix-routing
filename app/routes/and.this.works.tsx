@@ -1,4 +1,4 @@
-import { Outlet } from "remix";
+import { Outlet } from "@remix-run/react";
 
 const filePath = "./routes/and.this.works.tsx";
 

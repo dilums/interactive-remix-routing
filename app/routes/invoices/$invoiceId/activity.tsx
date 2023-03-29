@@ -1,6 +1,6 @@
-import { Outlet} from "remix";
+import { Outlet } from "@remix-run/react";
 export const handle = {
-  breadcrumb: () => <span>Activity</span>
+  breadcrumb: () => <span>Activity</span>,
 };
 const filePath = "./routes/invoices/$invoiceId/activity.tsx";
 
