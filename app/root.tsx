@@ -13,6 +13,7 @@ import type { LinksFunction } from "@remix-run/node";
 import globalStylesUrl from "~/styles/global.css";
 
 import Structure from "./components/structure";
+import Header from "./components/Header";
 
 // https://remix.run/api/app#links
 export let links: LinksFunction = () => {
@@ -139,6 +140,7 @@ function Document({
 function Layout({ children }: { children: React.ReactNode }) {
   return (
     <div className="root">
+      <Header />
       <div className="sidebar">
         <div>
           <Structure />

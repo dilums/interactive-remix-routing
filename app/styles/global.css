@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 :root {
-  --stColor: #9c8eaa;
+  --stColor: #dad3e0;
   --bodyColor:#202124;
 }
 * {
@@ -22,16 +22,18 @@ body {
 
 .content {
   flex-grow: 1;
-  padding: 24px;
+  padding: 84px 24px 24px 24px
 }
 
 .sidebar {
   flex-shrink: 0;
+  
 }
 
 .sidebar > div {
   height: 100vh;
   width: 360px;
+  padding-top: 60px;
   overflow-x: hidden;
   overflow-y: auto;
   position: sticky;
@@ -154,15 +156,15 @@ a {
 
 .route {
   color: #003320;
-  background: #60b349ed;
+  background: #72f94d;
 }
 .layout-route {
   color: #03021e;
-  background: #6062c6ed;
+  background: #4e51e8;
 }
 
 a.active {
-  background: #01010a;
+  background: #5c0684;
 }
 
 .toolbar {
@@ -262,4 +264,63 @@ height: 60px;
   grid-column: 1 / span 4;
   grid-row: 3/ span 1;
   background: rgb(189 203 109);
+}
+
+.header{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 56px;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #17171a;
+  padding: 0px 24px 0px 8px;
+}
+
+.header-logo-contanier{
+  display: inline-flex;
+  align-items: flex-end;
+  text-decoration: none;
+}
+
+.header-right{
+  display: inline-flex;
+  align-items: center;
+}
+
+.remix-logo{
+  height: 28px;
+}
+
+.header-logo-tag{
+  margin-left: 4px;
+  font-size: 0.8rem;
+  background-color: #2a880f;
+  padding: 2px 8px;
+  border-radius: 99px;
+  font-weight:600;
+}
+
+.header-github{
+  height: 32px;
+  width: 32px;
+  background-color: #3b3b44;
+  display: grid;
+  place-items: center;
+  padding: unset;
+  margin-left: 12px;
+}
+
+.github-icon{
+  width: 20px;
+  height: 20px;
+}
+
+.header-v2-demo{
+  background-color: #3b3b44;
+  text-decoration: unset;
+  padding: 4px 12px;
 }
