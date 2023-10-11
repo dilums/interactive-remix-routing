@@ -21,7 +21,7 @@ export function ErrorBoundary({ error }: { error: Error }) {
         <p>{error.message}</p>
         <hr />
         <p>
-          The bad.tsx is designed to at runtime. The error will be caught by the
+          The bad.tsx is designed to throw an error at runtime. The error will be caught by the
           nearest error boundary present up in the hierarchy (/routes/errors.tsx
           in this case).
         </p>
